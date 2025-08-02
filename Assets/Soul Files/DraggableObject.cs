@@ -37,7 +37,8 @@ public class DraggableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         if (isHeld && pointerData.pointerCurrentRaycast.worldPosition != Vector3.zero)
         {
-            transform.position = pointerData.pointerCurrentRaycast.worldPosition + holderOffset;
+            Vector3 followedPosition = pointerData.pointerCurrentRaycast.worldPosition + holderOffset;
+            transform.position = new Vector3(followedPosition.x, followedPosition.y, 0);
         }
     }
 
