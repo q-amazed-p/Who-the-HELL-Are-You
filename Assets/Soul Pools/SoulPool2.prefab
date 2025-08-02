@@ -44,8 +44,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d6122cab51c19b499001e74fb5eed82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextSoulPool: {fileID: 0}
   soulsForTheDay:
-  - name: 
+  - metaGuilty: 0
+    name: 
+    age: 0
+    cause: 
+    location: 
+    crimesCommited: 
+    verdicts: 
+    prisonTime: 
+    donations: 0
+    volunteering: 
+    livesSaved: 
+    pride: 0
+    regret: 0
+    love: 0
+    hate: 0
+  - metaGuilty: 0
+    name: 
     age: 0
     cause: 
     location: 

@@ -5,13 +5,11 @@ public class SoulSpawner : MonoBehaviour
     static SoulSpawner _instance;
     public static SoulSpawner Instance => _instance;
 
-    public GameObject tempSoulFile;
+    public GameObject soulFilePref;
 
-    SoulPool soulPool;
-
-    public GameObject SpawnNextSoul() 
+    public void SpawnNextSoul() 
     {
-        return Instantiate(tempSoulFile, transform);
+        Instantiate(soulFilePref, transform);
     }
 
     void Start() 

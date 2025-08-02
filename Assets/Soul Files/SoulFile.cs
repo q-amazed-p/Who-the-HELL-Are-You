@@ -7,22 +7,26 @@ public class SoulFile : MonoBehaviour
     Image mySprite;
     Coroutine fadeProcess;
 
+    bool guilty;
+
+
+
     void Start()
     {
         mySprite = GetComponent<Image>();
         fadeProcess = null;
 
         FindAnyObjectByType<HellScale>().ReportNewFile(this);
-    }
 
-    void Update()
-    {
-        
+        SoulData nextSoulDetails = FindAnyObjectByType<SoulPool>().ReadNextSoul();
+        guilty = nextSoulDetails.metaGuilty;
     }
 
     public void Dismiss(bool spared) 
     {
-        if (fadeProcess != null) return;
+        ScoreKeeper.AddScore(spared ^ guilty);
+
+        if(fadeProcess != null) return;
         fadeProcess = StartCoroutine(Fade(spared));
     }
 
@@ -37,7 +41,12 @@ public class SoulFile : MonoBehaviour
         mySprite.enabled = false;
         yield return new WaitForSeconds(1);
 
-        SoulSpawner.Instance.SpawnNextSoul();
+        if (GameState.endOfDay)
+        {
+            GameState.endOfDay = false;
+            ScoreKeeper.EndTheDay();
+        }
+        else SoulSpawner.Instance.SpawnNextSoul();
         Destroy(this.gameObject);
     }
 }

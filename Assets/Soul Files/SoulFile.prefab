@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6320754, g: 0.5265938, b: 0.45020467, a: 1}
+  m_Color: {r: 0.5019608, g: 0.38039216, b: 0.34117648, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -102,8 +102,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539bf10af94cb764e9f77f6b4264b466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDesked: 0
   rotationSpeed: 2
   targetAngle: 65
+  onDesked:
+    m_PersistentCalls:
+      m_Calls: []
+  onPicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8082956092152526545
 MonoBehaviour:
   m_ObjectHideFlags: 0

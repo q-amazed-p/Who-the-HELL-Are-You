@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class HellScale : MonoBehaviour
 {
-    [SerializeField] SoulPool soulPool;
 
     [SerializeField] SoulFile currentSoulFile;
 
