@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +8,14 @@ public class SoulFile : MonoBehaviour
     Image mySprite;
     Coroutine fadeProcess;
 
-    bool guilty;
+    bool anomaly;
+    int anomalyCode;
+
+    [SerializeField] TMP_Text nameEntry;
+    [SerializeField] TMP_Text dateEntry;
+    [SerializeField] TMP_Text locationEntry;
+    [SerializeField] TMP_Text causeEntry;
+
 
 
 
@@ -19,12 +27,18 @@ public class SoulFile : MonoBehaviour
         FindAnyObjectByType<HellScale>().ReportNewFile(this);
 
         SoulData nextSoulDetails = FindAnyObjectByType<SoulPool>().ReadNextSoul();
-        guilty = nextSoulDetails.metaGuilty;
+        anomalyCode = nextSoulDetails.metaAnomalyCode;
+        anomaly = anomalyCode != 0;
+
+        nameEntry.text = nextSoulDetails.name;
+        dateEntry.text = nextSoulDetails.date;
+        locationEntry.text = nextSoulDetails.location;
+        causeEntry.text = nextSoulDetails.cause;
     }
 
     public void Dismiss(bool spared) 
     {
-        ScoreKeeper.AddScore(spared ^ guilty);
+        ScoreKeeper.AddScore(spared ^ anomaly);
 
         if(fadeProcess != null) return;
         fadeProcess = StartCoroutine(Fade(spared));

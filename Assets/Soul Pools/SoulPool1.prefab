@@ -46,33 +46,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextSoulPool: {fileID: 6455759115628435427, guid: 172b65ec84992134fb9a811338097bf1, type: 3}
   soulsForTheDay:
-  - metaGuilty: 1
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
-  - metaGuilty: 0
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
+  - metaAnomalyCode: 7
+    name: Mina Dobellare
+    date: August 4, 1976
+    cause: Struck by racecar
+    location: Nepal
+  - metaAnomalyCode: 0
+    name: Dan Parsons
+    date: March 8, 1989
+    cause: Heart Attack
+    location: Brazil
+  - metaAnomalyCode: 0
+    name: Hodge Fralt
+    date: June 17, 1980
+    cause: Stabbed
+    location: Portugal
+  - metaAnomalyCode: 3
+    name: Kim Bermond
+    date: May 6, 1955
+    cause: Anesthesia Overdose
+    location: Germany
+  - metaAnomalyCode: 0
+    name: Vic Olson
+    date: July 30, 2010
+    cause: Old Age
+    location: Poland
+  - metaAnomalyCode: 5
+    name: Ellie Olson
+    date: September 9, 2001
+    cause: Fell from Roof
+    location: Chad
+  - metaAnomalyCode: 7
+    name: Catrina Newpont
+    date: January 28, 1998
+    cause: Rotator cuff surgery complication
+    location: Fiji
+  - metaAnomalyCode: 4
+    name: Liam Bruska
+    date: December 23, 1964
+    cause: Lung Cancer
+    location: Italy
+  - metaAnomalyCode: 7
+    name: Jason Thwack
+    date: July 23, 2017
+    cause: Electrocution
+    location: Sweden
+  - metaAnomalyCode: 0
+    name: Kenny Torney
+    date: June 11, 1983
+    cause: Heart Attack
+    location: Japan
