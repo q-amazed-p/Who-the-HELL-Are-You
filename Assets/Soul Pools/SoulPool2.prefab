@@ -46,33 +46,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextSoulPool: {fileID: 0}
   soulsForTheDay:
-  - metaGuilty: 0
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
-  - metaGuilty: 0
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
+  - metaAnomalyCode: 11
+    name: Wendy Singer
+    date: March 5, 1956
+    cause: Bacterial Infection
+    location: Chad
+  - metaAnomalyCode: 0
+    name: Damon Prom
+    date: April 7, 1978
+    cause: Old Age
+    location: England
+  - metaAnomalyCode: 8
+    name: Mo O'Malley
+    date: June 13, 1954
+    cause: Food Poisoning
+    location: Ireland
+  - metaAnomalyCode: 0
+    name: Amber Melvin
+    date: October 25, 2003
+    cause: Gunshot
+    location: Brazil
+  - metaAnomalyCode: 1
+    name: Vlad Kamden
+    date: May 5, 2016
+    cause: Fire in Building
+    location: Russia
+  - metaAnomalyCode: 9
+    name: Nathaniel Park
+    date: January 13, 1961
+    cause: Blunt Force Trauma
+    location: Chad
+  - metaAnomalyCode: 0
+    name: Zara Wei
+    date: September 27, 1969
+    cause: Heart Attack
+    location: Zimbabwe
+  - metaAnomalyCode: 0
+    name: Teddy Marso
+    date: November 14, 1982
+    cause: Stabbed
+    location: Mexico
+  - metaAnomalyCode: 10
+    name: Charles Wolf
+    date: July 14, 1972
+    cause: Skydiving Accident
+    location: Japan
+  - metaAnomalyCode: 7
+    name: Mark Hardt
+    date: March 9, 1981
+    cause: Animal Attack
+    location: Madagascar
