@@ -8,6 +8,7 @@ public class DayResultMessage : MonoBehaviour
 
     private void OnEnable()
     {
+        SfxPlayer.PlaySfx(SFXType.victorySfx);
         int rightCount;
         int wrongCount;
         ScoreKeeper.ScoreDay(out rightCount, out wrongCount);
