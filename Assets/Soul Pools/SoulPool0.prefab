@@ -46,33 +46,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextSoulPool: {fileID: 6455759115628435427, guid: aee2ca05caf4faf4ca1f72d95720f2c6, type: 3}
   soulsForTheDay:
-  - metaGuilty: 0
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
-  - metaGuilty: 1
-    name: 
-    age: 0
-    cause: 
-    location: 
-    crimesCommited: 
-    verdicts: 
-    prisonTime: 
-    donations: 0
-    volunteering: 
-    livesSaved: 
-    pride: 0
-    regret: 0
-    love: 0
-    hate: 0
+  - metaAnomalyCode: 0
+    name: Abigail Jetson
+    date: April 3, 1979
+    cause: Heart Attack
+    location: Chad
+  - metaAnomalyCode: 4
+    name: Quincy Knox
+    date: January 12, 1958
+    cause: Stabbed
+    location: Chad
+  - metaAnomalyCode: 1
+    name: Darla Montgomery
+    date: January 7, 1958
+    cause: Burnt to Death
+    location: New Zealand
+  - metaAnomalyCode: 2
+    name: Jack Twandy
+    date: August 1, 1993
+    cause: Choked on Gum
+    location: Argentina
+  - metaAnomalyCode: 0
+    name: Milo Ordinado
+    date: July 13, 2012
+    cause: Fell from Roof
+    location: Greece
+  - metaAnomalyCode: 0
+    name: Ellen Frank
+    date: March 21, 1982
+    cause: Starvation
+    location: Italy
+  - metaAnomalyCode: 3
+    name: Anna Xi
+    date: December 5, 1966
+    cause: Crushed by Tree
+    location: Germany
+  - metaAnomalyCode: 0
+    name: Blue Martensen
+    date: May 30, 1987
+    cause: Heart Attack
+    location: Norway
+  - metaAnomalyCode: 1
+    name: Cam Dillon
+    date: April 12, 1986
+    cause: Fire in Building
+    location: Nepal
+  - metaAnomalyCode: 0
+    name: Marco Einerson
+    date: June 16, 1990
+    cause: Stabbed
+    location: Spain
