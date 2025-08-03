@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 public class SoulPool : MonoBehaviour
@@ -6,6 +5,8 @@ public class SoulPool : MonoBehaviour
     [SerializeField] GameObject NextSoulPool;
 
     [SerializeField] SoulData[] soulsForTheDay;
+
+    [SerializeField] GameObject todayPage;
 
     int judgementProgress;
 

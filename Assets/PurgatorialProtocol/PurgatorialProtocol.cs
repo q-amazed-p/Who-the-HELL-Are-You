@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class PurgatorialProtocol : MonoBehaviour
 {
+
     public bool isFolded;
 
     private void Start()
@@ -30,14 +31,13 @@ public class PurgatorialProtocol : MonoBehaviour
         {
             foldingProcess = StartCoroutine(Folder());
         }
-
     }
 
     IEnumerator Folder() 
     {  
         for(int i = transform.childCount -1; i >= 0; i--) 
         {
-            if (i == 0 && !isFolded)  break;
+            //if (i == 0 && !isFolded)  break;
 
             Transform nextPage = transform.GetChild(i);
 
@@ -49,6 +49,7 @@ public class PurgatorialProtocol : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
 
         }
+        foldingProcess = null;
     }
 
 }

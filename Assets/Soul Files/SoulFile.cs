@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SoulFile : MonoBehaviour
 {
     Image mySprite;
+    TMP_Text[] allText;
     Coroutine fadeProcess;
 
     bool anomaly;
@@ -22,6 +23,7 @@ public class SoulFile : MonoBehaviour
     void Start()
     {
         mySprite = GetComponent<Image>();
+        allText = GetComponentsInChildren<TMP_Text>();
         fadeProcess = null;
 
         FindAnyObjectByType<HellScale>().ReportNewFile(this);
@@ -50,9 +52,12 @@ public class SoulFile : MonoBehaviour
         for(float i = 1; i > 0; i -= Time.deltaTime) 
         {
             mySprite.color += colorDelta * Time.deltaTime;
+            foreach (TMP_Text tmpt in allText) tmpt.color += colorDelta * Time.deltaTime;
+
             yield return null;
         }
         mySprite.enabled = false;
+        foreach (TMP_Text tmpt in allText) tmpt.enabled = false;
         yield return new WaitForSeconds(1);
 
         if (GameState.endOfDay)
