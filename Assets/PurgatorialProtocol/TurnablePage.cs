@@ -18,11 +18,12 @@ public class TurnablePage : MonoBehaviour
         if (!isTurned) 
         {
             TurnOpen();
+            isTurned = true;
         }
         else 
         {
             TurnClosed();
-            
+            isTurned = false;
         }
     }
 
@@ -39,7 +40,6 @@ public class TurnablePage : MonoBehaviour
         if (pageTurningProcess != null) StopCoroutine(pageTurningProcess);
 
         pageTurningProcess = StartCoroutine(PageTurner(true));
-        isTurned = true;
     }
 
     public void TurnClosed() 
@@ -47,7 +47,6 @@ public class TurnablePage : MonoBehaviour
         if (pageTurningProcess != null) StopCoroutine(pageTurningProcess);
 
         pageTurningProcess = StartCoroutine(PageTurner(false));
-        isTurned = false;
     }
 
 
