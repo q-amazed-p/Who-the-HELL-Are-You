@@ -1,12 +1,15 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DayResultMessage : MonoBehaviour
 {
     [SerializeField] TMP_Text right;
     [SerializeField] TMP_Text wrong;
 
+    [SerializeField] Button dismissButton;
     [SerializeField] PageUnlocker pageUnlocker;
+    int newDaySeen = 1;
 
     private void OnEnable()
     {
@@ -17,6 +20,8 @@ public class DayResultMessage : MonoBehaviour
         right.text = rightCount.ToString();
         wrong.text = wrongCount.ToString();
 
-        pageUnlocker.UnlockNextPage();
+        newDaySeen++;
+        if (newDaySeen > GameState.totalDays) dismissButton.onClick.AddListener(GetComponent<PlayAgainButton>().PlayAgain);
+        else pageUnlocker.UnlockNextPage();
     }
 }

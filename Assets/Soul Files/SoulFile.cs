@@ -18,8 +18,6 @@ public class SoulFile : MonoBehaviour
     [SerializeField] TMP_Text causeEntry;
 
 
-
-
     void Start()
     {
         mySprite = GetComponent<Image>();
@@ -42,7 +40,8 @@ public class SoulFile : MonoBehaviour
     {
         ScoreKeeper.AddScore(spared ^ anomaly);
 
-        if(fadeProcess != null) return;
+        ScoreKeeper.CheckForGameOver();
+
         fadeProcess = StartCoroutine(Fade(spared));
     }
 

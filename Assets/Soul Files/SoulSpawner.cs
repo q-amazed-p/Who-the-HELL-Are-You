@@ -15,5 +15,6 @@ public class SoulSpawner : MonoBehaviour
     void Start() 
     {
         _instance = this;
+        SpawnNextSoul();
     }
 }

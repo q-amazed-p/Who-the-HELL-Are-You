@@ -25,7 +25,6 @@ public class DeskableObject : MonoBehaviour, IPointerMoveHandler
     {
         if (toBeDesked) 
         {
-            Debug.Log("invoked desked");
             onDesked.Invoke();
             while (transform.rotation.eulerAngles.x < targetAngle) 
             {
@@ -41,7 +40,6 @@ public class DeskableObject : MonoBehaviour, IPointerMoveHandler
                 yield return null;
             }
             transform.localRotation = Quaternion.identity;
-            Debug.Log("invoked picked");
             onPicked.Invoke();
         }
 

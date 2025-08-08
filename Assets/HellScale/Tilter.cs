@@ -49,9 +49,7 @@ public class Tilter : MonoBehaviour
         for(float i = 0; i < 1;  i += Time.deltaTime) 
         {
             float dynamisedI = -0.5f*Mathf.Cos(10*i/Mathf.PI) + 0.5f;
-            Debug.Log("dynamisedI = " + dynamisedI);
             transform.rotation = Quaternion.Lerp(startingAngle, targetAngle, dynamisedI);
-            Debug.Log("new rotation = " + Quaternion.Lerp(startingAngle, targetAngle, dynamisedI));
 
             rightPanT.rotation = Quaternion.identity;
             leftPanT.rotation = Quaternion.identity;

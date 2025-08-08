@@ -25,7 +25,7 @@ public class SoulPool : MonoBehaviour
         if(judgementProgress == soulsForTheDay.Length)
         {
             GameState.endOfDay = true;
-            Instantiate(NextSoulPool);
+            if (NextSoulPool != null) Instantiate(NextSoulPool);
             Destroy(this.gameObject);
         }
 

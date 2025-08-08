@@ -9,7 +9,9 @@ public class ScoreKeeper : MonoBehaviour
     int currentGottenWrong;
 
     [SerializeField] GameObject endOfDayMessage;
+    [SerializeField] GameObject gameOverMessage;
 
+    [SerializeField] int errorsAllowed;
 
     void Start()
     {
@@ -27,6 +29,11 @@ public class ScoreKeeper : MonoBehaviour
     static public void EndTheDay() 
     {
         _instance.endOfDayMessage.SetActive(true);
+    }
+
+    static public void CheckForGameOver() 
+    {
+        if (_instance.currentGottenWrong >= _instance.errorsAllowed) _instance.gameOverMessage.SetActive(true);
     }
 
     static public void ScoreDay(out int gottenRight, out int gottenWorng) 
