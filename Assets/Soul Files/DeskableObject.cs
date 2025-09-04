@@ -47,7 +47,7 @@ public class DeskableObject : MonoBehaviour, IPointerMoveHandler
 
     public void OnPointerMove(PointerEventData pointerData)
     {
-            if (transform.position.y < -2)
+            if (transform.position.y < -2.5)
             {
                 if (!isDesked)
                 {
